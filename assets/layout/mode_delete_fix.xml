@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+    <RelativeLayout
+        android:id="@+id/mode_delete_fix"
+        android:layout_width="932dp"
+        android:layout_height="332dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_mode_delete">
+
+        <RelativeLayout
+            android:id="@+id/mode_delete_fix_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="104dp">
+
+            <TextView
+                android:id="@+id/pre_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Medium"
+                android:text="确认删除“"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/mode_name_in_mdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/pre_name"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Medium"
+                android:text="沸水"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/post_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/mode_name_in_mdf"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Medium"
+                android:text="”模式？"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/temp_name_in_mdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pre_name"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                android:text="温度"
+                android:textColor="#979BA0"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/temp_num_in_mdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mode_name_in_mdf"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="44dp"
+                android:layout_toEndOf="@id/temp_name_in_mdf"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                android:text="98℃"
+                android:textColor="#979BA0"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/chu_shui_liang_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_name_in_mdf"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                android:text="出水量"
+                android:textColor="#979BA0"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/chu_shui_liang_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp_num_in_mdf"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/chu_shui_liang_name"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                android:text="350ml"
+                android:textColor="#979BA0"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mode_delete_fix_btn"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="88dp"
+            android:layout_toEndOf="@id/mode_delete_fix_info">
+
+            <TextView
+                android:id="@+id/mode_delete_fix_sure"
+                android:layout_width="187dp"
+                android:layout_height="68dp"
+                android:background="@drawable/mode_add_sure"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Medium"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="27.07sp" />
+
+            <TextView
+                android:id="@+id/mode_delete_fix_quxiao"
+                android:layout_width="187dp"
+                android:layout_height="68dp"
+                android:layout_below="@id/mode_delete_fix_sure"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/mode_add_quxiao"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Medium"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="27.07sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

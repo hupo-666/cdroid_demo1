@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/numberpicker_input"
+    android:layout_width="154dp"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="#00FFFFFF">
+
+</EditText>

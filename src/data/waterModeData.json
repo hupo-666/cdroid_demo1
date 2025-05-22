@@ -1,0 +1,38 @@
+[
+	{
+		"canDelete" : "0",
+		"chuShuiLiang" : "350",
+		"dataPos" : "1",
+		"dataType" : "default",
+		"imageDir" : "@mipmap/pic_chushui_lengshui",
+		"modeName" : "\u51b0\u6c34",
+		"temperature" : "5~12"
+	},
+	{
+		"canDelete" : "0",
+		"chuShuiLiang" : "350",
+		"dataPos" : "2",
+		"dataType" : "default",
+		"imageDir" : "@mipmap/pic_chushui_changwenshui",
+		"modeName" : "\u5e38\u6e29",
+		"temperature" : "\u5b9e\u65f6"
+	},
+	{
+		"canDelete" : "1",
+		"chuShuiLiang" : "700",
+		"dataPos" : "3",
+		"dataType" : "addnew",
+		"imageDir" : "@mipmap/pic_chushui_gouji",
+		"modeName" : "\u6e29\u5f00\u6c34",
+		"temperature" : "62"
+	},
+	{
+		"canDelete" : "0",
+		"chuShuiLiang" : "350",
+		"dataPos" : "4",
+		"dataType" : "default",
+		"imageDir" : "@mipmap/pic_chushui_feishui",
+		"modeName" : "\u6cb8\u6c34",
+		"temperature" : "98"
+	}
+]

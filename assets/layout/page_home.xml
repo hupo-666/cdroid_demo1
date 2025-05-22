@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+    <include
+        android:id="@+id/left_layout"
+        android:layout="@layout/left_layout" />
+
+    <RelativeLayout
+        android:id="@+id/layout_second_layout"
+        android:layout_width="336dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/left_layout"
+        android:layout_marginStart="20dp"
+        >
+        <RelativeLayout
+            android:id="@+id/layout_daily_recommend"
+            android:layout_width="336dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            >
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_up"
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_up"
+                android:layout_width="48dp"
+                android:layout_height="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:tabBackground="@drawable/lunbo_selected"
+                app:tabMaxWidth="40dp"
+                app:tabMinWidth="24dp"
+                app:tabGravity="center"
+                app:tabMode="fixed"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_latest_used"
+            android:layout_width="336dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/layout_daily_recommend"
+            >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_down"
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_down"
+                android:layout_width="48dp"
+                android:layout_height="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:tabBackground="@drawable/lunbo_selected"
+                app:tabMaxWidth="40dp"
+                app:tabMinWidth="24dp"
+                app:tabGravity="center"
+                app:tabMode="fixed"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_Micro_cube"
+        android:layout_width="336dp"
+        android:layout_height="400dp"
+        android:layout_toRightOf="@id/layout_second_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/bg_wei_mo_fang">
+        <RelativeLayout
+            android:id="@+id/display_title_micro_cube"
+            android:layout_width="276dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微魔方"
+                android:textColor="#DBD0D0"
+                android:textSize="36dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_mo_fang"
+                android:scaleType="centerInside"/>
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/display_micro_firstrow"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/display_title_micro_cube"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/micro_wave"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:text="微波"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/micro_steam"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:text="微蒸"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/micro_boil"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="微煮"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/display_micro_firstrow"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/micro_fry"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:text="微炸"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/micro_baked"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="微焗"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/micro_braising"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="微炖"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_steam_barbecue"
+        android:layout_width="336dp"
+        android:layout_height="400dp"
+        android:layout_toRightOf="@id/layout_Micro_cube"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/bg_zheng_kao">
+        <RelativeLayout
+            android:id="@+id/display_title_steam_barbecue"
+            android:layout_width="276dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/bt_steam_barbecue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蒸烤"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="36dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/display_set_steam_barbecue_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/display_title_steam_barbecue"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/bt_fresh_steam"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:text="鲜蒸"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/bt_juicy_barbecue"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:text="嫩烤"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/display_set_steam_barbecue_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/display_set_steam_barbecue_1"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/bt_fried"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:text="香炸"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/bt_boil_baked"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:text="炖焗"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_smart_recipe"
+        android:layout_width="336dp"
+        android:layout_height="400dp"
+        android:layout_toRightOf="@id/layout_steam_barbecue"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/bg_zhi_neng_cai_pu">
+
+        <RelativeLayout
+            android:id="@+id/display_title_smart_recipe"
+            android:layout_width="276dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:id="@+id/bt_smart_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="智能菜谱"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="36dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/display_set_smart_recipe_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/display_title_smart_recipe"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/bt_cloud_recipe"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:text="云菜谱"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/bt_intelligent_arrage"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:text="智能组菜"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/display_set_smart_recipe_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/display_set_smart_recipe_1"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/bt_menu_encyclopedia"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:text="菜谱百科"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/bt_health_recommendation"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:text="养生推荐"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="30dp"
+                android:background="@drawable/bg_samll"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_right_layout"
+        android:layout_width="336dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/layout_smart_recipe"
+        android:layout_marginStart="20dp">
+        <RelativeLayout
+            android:id="@+id/layout_my_clloection"
+            android:layout_width="336dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/bg_wo_de_shou_cang">
+            <TextView
+                android:id="@+id/bt_my_collection"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="我的收藏"
+                android:textSize="28dp"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="My Collection"
+                android:textSize="18dp"
+                android:layout_below="@id/bt_my_collection"
+                android:layout_alignRight="@id/bt_my_collection"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/bt_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="25dp"
+                android:src="@mipmap/icon_love"
+                android:scaleType="centerInside"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_smart_mode"
+            android:layout_width="336dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/layout_my_clloection"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/bg_zhi_neng_mo_shi">
+            <TextView
+                android:id="@+id/bt_smart_mode"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="智能模式"
+                android:textSize="28dp"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp" />
+            <TextView
+                android:id="@+id/english_display_smart_mode"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="Smart mode"
+                android:textSize="18dp"
+                android:layout_below="@id/bt_smart_mode"
+                android:layout_alignRight="@id/bt_smart_mode"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:gravity="center"/>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/english_display_smart_mode"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shuang_xiang_jian_tou"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/bt_switch_mode"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/icon_shuang_xiang_jian_tou"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/bt_human_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="25dp"
+                android:src="@mipmap/icon_mine"
+                android:scaleType="centerInside"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

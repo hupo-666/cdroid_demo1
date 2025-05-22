@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="1780dp"
+        android:height="440dp"
+        android:drawable="@mipmap/bg_2"/>
+
+    <item
+        android:width="464dp"
+        android:height="300dp"
+        android:drawable="@mipmap/bg_fire"
+        android:top="95dp"
+        android:gravity="center_horizontal"/>
+
+    <item
+        android:width="152dp"
+        android:height="262dp"
+        android:drawable="@mipmap/bg_light_left_y1"
+        android:left="200dp"
+        android:top="77dp" />
+
+    <item
+        android:drawable="@mipmap/bg_light_left_y2"
+        android:height="600dp"
+        android:width="900dp"
+        android:left="280dp"
+        android:top="-80dp"
+        />
+
+    <item
+        android:drawable="@mipmap/bg_light_right_y"
+        android:height="600dp"
+        android:width="900dp"
+        android:top="-80dp"
+        android:left="550dp"/>
+
+    <item
+        android:drawable="@mipmap/icon_temperature"
+        android:height="64dp"
+        android:width="64dp"
+        android:top="180dp"
+        android:left="360dp"/>
+
+    <item
+        android:drawable="@mipmap/bg_light_left_x"
+        android:height="50dp"
+        android:width="150dp"
+        android:top="200dp"
+        android:left="265dp"/>
+
+    <item
+        android:drawable="@mipmap/bg_light_right_x"
+        android:height="50dp"
+        android:width="120dp"
+        android:top="195dp"
+        android:left="1340dp"
+        />
+
+    <item
+        android:drawable="@mipmap/icon_clock_s"
+        android:height="64dp"
+        android:width="64dp"
+        android:top="180dp"
+        android:left="1080dp"/>
+
+
+</layer-list>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/steam_barbecue_parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+    <include android:layout="@layout/left_layout" />
+
+    <RelativeLayout
+        android:id="@+id/main_dislpay_layout_in_sb_layout"
+        android:layout_width="1760dp"
+        android:layout_height="420dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_can_shu_setting">
+
+        <ImageView
+            android:id="@+id/bt_home_in_sb_layout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/icon_home" />
+
+        <NumberPicker
+            android:id="@+id/cook_mode_choice"
+            android:layout_width="70dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="110dp"
+            android:internalLayout="@layout/selected_numpick_cook_mode_choice"
+            android:gravity="center"
+            android:min="0"
+            android:max="3"
+            android:textColor="#48454b"
+            android:textSize="24sp"
+            android:updateInputTextInFling="true"
+            android:wheelItemCount="3"
+            />
+
+        <RelativeLayout
+            android:id="@+id/display_temperature_in_sb_layout"
+            android:layout_width="150dp"
+            android:layout_height="280dp"
+            android:layout_toRightOf="@id/cook_mode_choice"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="80dp"
+            >
+
+            <NumberPicker
+                android:id="@+id/numberpicker_in_display_temperature"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:internalLayout="@layout/selected_numpick_temperature_choice"
+                android:max="300"
+                android:min="100"
+                android:selectedTextColor="#FFFFFF"
+                android:selectedTextSize="60sp"
+                android:textColor="#48454b"
+                android:textSize="40sp"
+                android:updateInputTextInFling="true"
+                android:wheelItemCount="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/numberpicker_in_display_temperature"
+                android:layout_centerVertical="true"
+                android:text="℃"
+                android:textSize="25dp"
+                android:gravity="top"
+                android:textColor="@color/material_dynamic_neutral99"/>
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/layout_baking_mode"
+            android:layout_width="484dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="630dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/bg_mode_div"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/bt_baking_mode_in_sb_layout"
+                android:layout_width="460dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:internalLayout="@layout/selected_numpick_baking_mode_choice"
+                android:min="0"
+                android:max="2"
+                android:selectedTextColor="#ffffff"
+                android:selectedTextSize="30sp"
+                android:textColor="#48454b"
+                android:textSize="24sp"
+                android:updateInputTextInFling="true"
+                android:wheelItemCount="3"/>
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/layout_baking_mode"
+            android:layout_marginTop="285dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/red_point"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/point_selector"
+                />
+
+
+            <TextView
+                android:id="@+id/bt_preheat"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/red_point"
+                android:text="预热"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/bt_preheat"
+                android:text="关"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/display_time_layout"
+            android:layout_width="250dp"
+            android:layout_height="280dp"
+            android:layout_toRightOf="@id/display_temperature_in_sb_layout"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="530dp">
+
+            <NumberPicker
+                android:id="@+id/numberpicker_in_display_time_hour"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:internalLayout="@layout/selected_numpick_hour_choice"
+                android:max="23"
+                android:min="0"
+                android:selectedTextColor="#FFFFFF"
+                android:selectedTextSize="60sp"
+                android:textColor="#48454b"
+                android:textSize="40sp"
+                android:updateInputTextInFling="true"
+                android:wheelItemCount="3"/>
+            
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/numberpicker_in_display_time_hour"
+                android:text="时"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"/>
+
+            <NumberPicker
+                android:id="@+id/numberpicker_in_display_time_min"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/numberpicker_in_display_time_hour"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:internalLayout="@layout/selected_numpick_hour_choice"
+                android:max="59"
+                android:min="0"
+                android:selectedTextColor="#FFFFFF"
+                android:selectedTextSize="60sp"
+                android:textColor="#48454b"
+                android:textSize="40sp"
+                android:updateInputTextInFling="true"
+                android:wheelItemCount="3"/>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/numberpicker_in_display_time_min"
+                android:text="分"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_part_layout_in_sb_layout"
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:layout_toRightOf="@id/display_time_layout"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="40dp">
+
+            <RelativeLayout
+                android:id="@+id/display_assist_part_layout"
+                android:layout_width="112dp"
+                android:layout_height="216dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wei_bo_fu_zhu"
+                    android:layout_width="112dp"
+                    android:layout_height="33dp"
+                    android:gravity="center"
+                    android:text="微波辅助"
+                    android:textColor="#52FFFFFF"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_wei_bo"
+                    android:layout_width="68dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/wei_bo_fu_zhu"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_fuzhu_btn"
+                    android:orientation="horizontal">
+
+                    <NumberPicker
+                        android:id="@+id/np_wei_bo_fu_zhu"
+                        android:layout_width="match_parent"
+                        android:layout_height="126dp"
+                        android:layout_gravity="center"
+                        android:internalLayout="@layout/selected_numpick_fuzhu_choice"
+                        android:max="2"
+                        android:min="0"
+                        android:selectedTextSize="22sp"
+                        android:selectedTextcolor="#FFFFFF"
+                        android:textColor="#48454b"
+                        android:textSize="20dp"
+                        android:updateInputTextInFling="true"
+                        android:wheelItemCount="3" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/zheng_qi_fu_zhu"
+                    android:layout_width="112dp"
+                    android:layout_height="33dp"
+                    android:layout_below="@+id/LinearLayout_wei_bo"
+                    android:layout_marginTop="34dp"
+                    android:gravity="center"
+                    android:text="蒸汽辅助"
+                    android:textColor="#52FFFFFF"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="68dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/zheng_qi_fu_zhu"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_fuzhu_btn"
+                    android:orientation="horizontal">
+
+                    <NumberPicker
+                        android:id="@+id/np_zheng_qi_fu_zhu"
+                        android:layout_width="68dp"
+                        android:layout_height="126dp"
+                        android:layout_gravity="center"
+                        android:internalLayout="@layout/selected_numpick_fuzhu_choice"
+                        android:max="2"
+                        android:min="0"
+                        android:selectedTextSize="22sp"
+                        android:selectedTextcolor="#FFFFFF"
+                        android:textColor="#48454b"
+                        android:textSize="20dp"
+                        android:updateInputTextInFling="true"
+                        android:wheelItemCount="3" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/bt_start_in_sb_layout"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/bg_btn"
+                android:drawableLeft="@mipmap/icon_ready"
+                android:paddingStart="10dp"
+                android:gravity="center"
+                android:text="开始"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/display_assist_part_layout"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                tools:ignore="UnknownId" />
+
+            <TextView
+                android:id="@+id/bt_appointment_in_sb_layout"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/bg_btn"
+                android:drawableLeft="@mipmap/icon_clock"
+                android:layout_below="@id/bt_start_in_sb_layout"
+                android:layout_toRightOf="@id/display_assist_part_layout"
+                android:paddingLeft="8dp"
+                android:text="预约"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>

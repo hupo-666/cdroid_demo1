@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/*",
+                "${workspaceFolder}/**",
+                "~/cdroid/src/*",
+                "~/cdroid/src/**",
+                "/opt/vcpkg/packages/**",
+                "~/cdroid/outX64-Debug/src/*",
+                "~/cdroid/outX64-Debug/include/**",
+                "~/cdroid/outX64-Debug/src/gui/*",
+                "${workspaceFolder}/src/common",
+                "/home/huangpeng/cdroid/outX64-Debug/include/gui/widget",
+                "/home/huangpeng/cdroid/outX64-Debug/include/gui",
+                "/opt/vcpkg/packages/cairo_arm-linux-dynamic/include/cairo",
+                "/opt/vcpkg/packages/freetype_arm-linux-dynamic/include",
+                "/home/huangpeng/cdroid/outX64-Debug/include/porting",
+                "${workspaceFolder}/src/data",
+                "${workspaceFolder}/src/windows",
+                "/opt/vcpkg/packages/jsoncpp_arm-linux-dynamic/include",
+                "${workspaceFolder}/src/viewlibs"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc-11",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

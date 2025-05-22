@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="248dp"
+    android:background="@drawable/recyclerview_mode">
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/pic_mode"
+            android:layout_width="88dp"
+            android:layout_height="124.67dp">
+
+            <ImageView
+                android:id="@+id/mode_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/pic_chushui_lengshui" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="123dp"
+            android:layout_height="124.67dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/pic_mode">
+
+            <TextView
+                android:id="@+id/mode_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/Bebas-Regular"
+                android:text="01"
+                android:textColor="#9D9D9D"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/mode_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mode_no"
+                android:layout_marginTop="-3dp"
+                android:fontFamily="@font/HarmonyOS_Sans_SC_Medium"
+                android:text="冰水"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <RelativeLayout
+                android:id="@+id/mode_temp"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mode_name"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mode_temp_name"
+                    android:layout_width="57.5dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                    android:text="温度"
+                    android:textColor="#9D9D9D"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mode_temp_num"
+                    android:layout_width="57.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/mode_temp_name"
+                    android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                    android:text="5~12℃"
+                    android:textColor="#9D9D9D"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mode_chu_shui_liang"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mode_temp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mode_chu_shui_liang_name"
+                    android:layout_width="57.5dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                    android:text="出水量"
+                    android:textColor="#9D9D9D"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mode_chu_shui_liang_num"
+                    android:layout_width="57.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/mode_chu_shui_liang_name"
+                    android:fontFamily="@font/HarmonyOS_Sans_SC_Regular"
+                    android:text="350ml"
+                    android:textColor="#9D9D9D"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/up"
+        android:background="#05FFFFFF"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/down_left"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="17dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_left" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/down_delete"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@id/down_left"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon_delete"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_sdelete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/down_right"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="116dp"
+            android:layout_toEndOf="@id/down_left"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_right" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

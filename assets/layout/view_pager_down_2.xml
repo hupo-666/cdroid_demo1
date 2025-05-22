@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zhi_neng_zhu_shou_layout"
+    android:layout_width="336dp"
+    android:layout_height="180dp"
+    android:background="@mipmap/bg_down2"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/zhi_neng_zhu_shou_left_layout"
+        android:layout_width="168dp"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="107dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="21dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_zhi_neng_zhu_shou" />
+
+        <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="21dp"
+        android:text="智能助手"
+        android:textColor="@color/white"
+        android:textSize="28sp"/>-->
+
+        <TextView
+            android:layout_below="@id/imageView1"
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="13dp"
+            android:text="说出你的想法..."
+            android:textColor="@color/white52"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zhi_neng_zhu_shou_right_layout"
+        android:layout_width="168dp"
+        android:layout_height="180dp"
+        android:layout_toRightOf="@id/zhi_neng_zhu_shou_left_layout"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="140dp"
+            android:layout_height="94dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_ai_help" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

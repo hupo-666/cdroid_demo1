@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout="@layout/left_layout"
+        />
+    <RelativeLayout
+        android:id="@+id/display_center_part_in_wms_layout"
+        android:layout_width="1680dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="120dp"
+        android:background="#1a1a1b"
+        >
+        <RelativeLayout
+            android:id="@+id/display_water_mode_manager_in_wms_layout"
+            android:layout_width="1680dp"
+            android:layout_height="125dp"
+            >
+            <ImageView
+                android:id="@+id/bt_back_in_wms_layout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/icon_back"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@id/bt_back_in_wms_layout"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="模式设置"
+                android:textColor="@color/material_dynamic_neutral99"
+                android:gravity="center"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:id="@+id/bt_icon_home_wms_layout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@id/bt_back_in_wms_layout"
+                android:layout_marginStart="1400dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/icon_home_water_mode"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/display_set_water_module_in_wma"
+            android:layout_width="1540dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/display_water_mode_manager_in_wms_layout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/recyclerview_add_detail">
+
+            <RelativeLayout
+                android:id="@+id/water_picture_in_wms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/pic_feishui"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="230dp">
+                <ImageView
+                    android:id="@+id/bt_change_water_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/icon_genghuan"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/set_water_in_wms"
+                android:layout_width="650dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/water_picture_in_wms"
+                android:layout_marginStart="150dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="名称"
+                    android:textColor="#999999"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="100dp"
+                    android:text="温度"
+                    android:textColor="#999999"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="190dp"
+                    android:text="出水量"
+                    android:textColor="#999999"
+                    android:textSize="25dp"/>
+
+                <ImageView
+                    android:id="@+id/bt_minus_temperatur_in_wms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_jianhao"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginStart="190dp"/>
+
+                <ImageView
+                    android:id="@+id/bt_minus_water_output_in_wms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_jianhao"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="190dp"/>
+
+                <EditText
+                    android:id="@+id/bt_water_name_in_wms"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="285dp"
+                    android:background="@drawable/xia_hua_xian"
+                    android:hint="沸水"
+                    android:textColorHint="@color/material_dynamic_neutral99"
+                    android:textSize="32dp"
+                    android:gravity="bottom"/>
+
+                <EditText
+                    android:id="@+id/bt_water_temperature_in_wms"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="115dp"
+                    android:layout_marginStart="285dp"
+                    android:background="@drawable/xia_hua_xian"
+                    android:hint="98℃"
+                    android:textColorHint="@color/material_dynamic_neutral99"
+                    android:textSize="32dp"
+                    android:gravity="bottom"/>
+
+                <EditText
+                    android:id="@+id/bt_water_output_in_wms"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="285dp"
+                    android:background="@drawable/xia_hua_xian"
+                    android:hint="350mL"
+                    android:textColorHint="@color/material_dynamic_neutral99"
+                    android:textSize="32dp"
+                    android:gravity="bottom"/>
+
+                <ImageView
+                    android:id="@+id/bt_add_water_temperature_in_wms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bt_water_temperature_in_wms"
+                    android:src="@mipmap/icom_jiahao"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginStart="100dp"/>
+
+                <ImageView
+                    android:id="@+id/bt_add_water_output_in_wms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bt_water_temperature_in_wms"
+                    android:src="@mipmap/icom_jiahao"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="100dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/bt_confirm"
+                android:layout_width="187dp"
+                android:layout_height="68dp"
+                android:background="@drawable/mode_add_sure"
+                android:layout_toRightOf="@id/set_water_in_wms"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="80dp"
+                android:text="确定"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/right_edge_in_wma_layout"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/display_center_part_in_wms_layout"
+        android:background="#060606"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/right_light_bulb"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_lignt" />
+
+        <ImageView
+            android:id="@+id/right_lock"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/right_light_bulb"
+            android:layout_marginTop="73dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_sock" />
+
+
+        <ImageView
+            android:id="@+id/right_set"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/right_lock"
+            android:layout_marginTop="73dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_setting" />
+    </RelativeLayout>
+
+</RelativeLayout>
